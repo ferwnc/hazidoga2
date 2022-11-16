@@ -14,8 +14,10 @@ return new class extends Migration
     public function up()
     {
         Schema::create('autoadat', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id("adat_id");
+            $table->string("Rendszam",15);
+            $table->string("Tipus",30);
+            $table->string("Szin",30);
         });
     }
 
