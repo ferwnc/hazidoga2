@@ -3,5 +3,5 @@
 @section("title","Autó életút")
 
 @section("content")
-    @include("menu")
+    @include("fooldal")
 @endsection

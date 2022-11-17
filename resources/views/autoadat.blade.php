@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('title','Főoldal')
 @section('content')
-     @include('menu')
+     @include('fooldal')
     <div class="container">
         <div class="row">
             <div class="col-12">
