@@ -13,6 +13,9 @@
         <li class="nav-item">
           <a class="nav-link" href="./baleset">baleset</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./tablazat">Táblázat</a>
+        </li>
       </ul>
     </div>
 </nav>

@@ -5,6 +5,7 @@ use App\Http\Controllers\fooldal;
 use App\Http\Controllers\autoeletut;
 use App\Http\Controllers\tulaj;
 use App\Http\Controllers\baleset;
+use App\Http\Controllers\tablazat;
 
 /*
 |--------------------------------------------------------------------------

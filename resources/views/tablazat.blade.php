@@ -1,45 +1,36 @@
-@extends("layouts.master")
-
-@section("title","Teremlista")
-
-@section("content")
-    @include("menu")
-    <div class="container">
+@extends('layouts.master')
+@section('title','Főoldal')
+@section('content')
+     @include('fooldal')
+     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="bg-dark p-3 rounded text-white mt-3">
-                    <h1>Terem lista </h1>
-                    <table class="table table-light table-sm table-striped table-hover">
-                        <tr>
-                            <th>#</th>
-                            <th>Rendszám</th>
-                            <th>Típus</th>
-                            <th>Szín</th>
-                        </tr>
-                        @foreach ($lista as $item)
-                        <tr id="sor_{{ $item->adat_id }}">
-                            <td>{{ $item->adat_id }}</td>
-                            <td>{{ $item->Rendszam }}</td>
-                            <td>{{ $item->Tipus }} cm</td>
-                            <td>{{ $item->Szin }} cm</td>
-                            
-                            <td>
-                                <button class="btn btn-primary btn-sm">M</button>
-                            </td>
-                           <!-- <td>
-                                <button class="btn btn-danger btn-sm" onclick="teremTorles({{ $item->t_id }});">törlés</button>
-                            </td>-->
-                        </tr>  
-                        @endforeach
+               <div class="bg-success p-3 mt-5 rounded text-white">
+
+                <h1>Adja meg a tulajdonos adatait!</h1>
+
+                <table class="table table-light table-sm table-striped table-hover">
+                    <tr>
+                        <th>Rendszám</th>
+                        <th>Típus</th>
+                        <th>Szín</th>
+                        <th>Részletek</th>
+                    </tr>
+                    @foreach ($tablazat as $item)
+                        <td>{{ $item->Rendszam }}</td>
+                        <td>{{ $item->Tipus }}</td>
+                        <td>{{ $item->Szin }}</td>
                         
-                    </table>
-                </div>
+                        <td>
+                            <button class="btn btn-primary btn-sm">Részletek</button>
+                        </td>
+                    </tr>  
+                    @endforeach
+                    
+                </table>
+
+               </div>
             </div>
         </div>
     </div>
-
-<script>
-
-</script>
-
 @endsection
