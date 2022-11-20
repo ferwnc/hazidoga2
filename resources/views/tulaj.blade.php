@@ -12,8 +12,6 @@
                 <form method="POST">
                     @csrf
 
-                    
-
                     <div class="mt-3 mb-3">
                         <label for="Nev">Tulajdonos neve:</label>
                         <input type="text" value="{{ old('Nev') }}" name="Nev" class="form-control">   
@@ -27,10 +25,10 @@
                     </div>
 
                     <div class="mt-3 mb-3">
-                        <label for="tuljog_kezd">Tulajdonjog kezdete:</label>
-                        <input type="date" value="{{ old('tuljog_kezd') }}" name="tuljog_kezd" class="form-control">    
+                        <label for="Tuljog_kezd">Tulajdonjog kezdete:</label>
+                        <input type="date" value="{{ old('Tuljog_kezd') }}" name="Tuljog_kezd" class="form-control">    
                       
-                        @error('tuljog_kezd')
+                        @error('Tuljog_kezd')
                                 <div class="alert alert-danger">
                                     {{$message}}
                                 </div>
@@ -39,10 +37,10 @@
                     </div>
 
                     <div class="mt-3 mb-3">
-                        <label for="tuljog_vege">Tulajdonjog vége:</label>
-                        <input type="date" value="{{ old('tuljog_vege') }}" name="tuljog_vege" class="form-control">  
+                        <label for="Tuljog_veg">Tulajdonjog vége:</label>
+                        <input type="date" value="{{ old('Tuljog_veg') }}" name="Tuljog_veg" class="form-control">  
                       
-                        @error('tuljog_vege')
+                        @error('Tuljog_veg')
                                 <div class="alert alert-danger">
                                     {{$message}}
                                 </div>

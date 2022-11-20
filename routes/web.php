@@ -30,3 +30,5 @@ Route::post('/tulaj', [tulaj::class,"tulajdonos"]);
 Route::get('/baleset', [baleset::class,"getContent"]);
 Route::post('/baleset', [baleset::class,"serules"]);
 
+Route::get('/tablazat', [tablazat::class,"getContent"]);
+

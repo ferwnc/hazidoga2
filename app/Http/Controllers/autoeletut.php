@@ -17,7 +17,7 @@ class autoeletut extends Controller
 
         $validate = $req->validate(
             [
-                "Rendszam" => "required|max:8",
+                "Rendszam" => "required|max:10",
                 "Tipus" => "required|max:50",
                 "Szin" => "required"
             ],
