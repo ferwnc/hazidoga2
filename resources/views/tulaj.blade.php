@@ -12,17 +12,7 @@
                 <form method="POST">
                     @csrf
 
-                    <div class="mt-3 mb-3">
-                        <label for="tulaj_id">ID:</label>
-                        <input type="number" value="{{ old('tulaj_id') }}" name="tulaj_id" class="form-control">
-                                              
-                        @error('tulaj_id')
-                                <div class="alert alert-danger">
-                                    {{$message}}
-                                </div>
-                        @enderror 
-    
-                    </div>
+                    
 
                     <div class="mt-3 mb-3">
                         <label for="Nev">Tulajdonos neve:</label>

@@ -12,18 +12,6 @@
 
                    <form method="POST">
                        @csrf
-                      
-                       <div class="mt-3 mb-3">
-                        <label for="adat_id">adat_id:</label>
-                        <input type="number," value="{{ old('adat_id') }}" name="adat_id" class="form-control"> 
-                       
-                        @error('adat_id')
-                                <div class="alert alert-danger">
-                                    {{$message}}
-                                </div>
-                        @enderror 
-
-                    </div>
                     
                        <div class="mt-3 mb-3">
                            <label for="Rendszam">Autó rendszáma:</label>

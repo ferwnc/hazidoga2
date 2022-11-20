@@ -15,10 +15,14 @@ class tulaj extends Controller
 
         $validate = $req->validate(
             [
-
+                "Nev" => "required",
+                "Tuljog_kezd" => "required",
+                "Tuljog_veg" => "required"
             ],
             [
-
+                "Nev.required" => "A mező kitöltése kötelező!",
+                "Tuljog_kezd.required" => "A mező kitöltése kötelező!",
+                "Tuljog_veg.required" => "A mező kitöltése kötelező!"
             ]
         );
         
