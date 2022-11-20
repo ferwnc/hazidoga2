@@ -25,8 +25,8 @@ Route::get('/autoadat', [autoeletut::class,"getContent"]);
 Route::post('/autoadat', [autoeletut::class,"adatok"]);
 
 Route::get('/tulaj', [tulaj::class,"getContent"]);
-
+Route::post('/tulaj', [tulaj::class,"tulajdonos"]);
 
 Route::get('/baleset', [baleset::class,"getContent"]);
-Route::post('/baleset', [autoeletut::class,"serules"]);
+Route::post('/baleset', [baleset::class,"serules"]);
 

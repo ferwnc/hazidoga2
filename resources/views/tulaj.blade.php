@@ -11,9 +11,15 @@
 
                 <form method="POST">
                     @csrf
+
                     <div class="mt-3 mb-3">
-                        <label for="tul_nev">Tulajdonos neve:</label>
-                        <input type="text" value="{{ old('tul_nev') }}" name="tul_nev" class="form-control">    
+                        <label for="tulaj_id">ID:</label>
+                        <input type="number" value="{{ old('tulaj_id') }}" name="tulaj_id" class="form-control">    
+                    </div>
+
+                    <div class="mt-3 mb-3">
+                        <label for="Nev">Tulajdonos neve:</label>
+                        <input type="text" value="{{ old('Nev') }}" name="Nev" class="form-control">    
                     </div>
 
                     <div class="mt-3 mb-3">
