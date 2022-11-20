@@ -13,17 +13,38 @@
                     @csrf
                     <div class="mt-3 mb-3">
                         <label for="baleset_id">ID:</label>
-                        <input type="number" value="{{ old('baleset_id') }}" name="baleset_id" class="form-control">    
+                        <input type="number" value="{{ old('baleset_id') }}" name="baleset_id" class="form-control">   
+                                                                     
+                        @error('baleset_id')
+                                <div class="alert alert-danger">
+                                    {{$message}}
+                                </div>
+                        @enderror 
+  
                     </div>
 
                     <div class="mt-3 mb-3">
                         <label for="baleset">Baleset időpontja:</label>
                         <input type="date" value="{{ old('baleset') }}" name="baleset" class="form-control">    
+                                                                     
+                        @error('baleset')
+                                <div class="alert alert-danger">
+                                    {{$message}}
+                                </div>
+                        @enderror 
+ 
                     </div>
 
                     <div class="mt-3 mb-3">
                         <label for="serules">Sérülés rövid leírása:</label>
                         <input type="text" value="{{ old('serules') }}" name="serules" class="form-control">    
+                                                                     
+                        @error('serules')
+                                <div class="alert alert-danger">
+                                    {{$message}}
+                                </div>
+                        @enderror 
+ 
                     </div>
                     
                     <div class="mt-3 mb-3">

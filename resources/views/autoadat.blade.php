@@ -15,23 +15,50 @@
                       
                        <div class="mt-3 mb-3">
                         <label for="adat_id">adat_id:</label>
-                        <input type="number," value="{{ old('adat_id') }}" name="adat_id" class="form-control">  
+                        <input type="number," value="{{ old('adat_id') }}" name="adat_id" class="form-control"> 
+                       
+                        @error('adat_id')
+                                <div class="alert alert-danger">
+                                    {{$message}}
+                                </div>
+                        @enderror 
+
                     </div>
                     
                        <div class="mt-3 mb-3">
                            <label for="Rendszam">Autó rendszáma:</label>
-                           <input type="text" value="{{ old('Rendszam') }}" name="Rendszam" class="form-control">    
+                           <input type="text" value="{{ old('Rendszam') }}" name="Rendszam" class="form-control">   
+                           
+                           @error('Rendszam')
+                                <div class="alert alert-danger">
+                                    {{$message}}
+                                </div>
+                            @enderror
+
                        </div>
 
                        <div class="mt-3 mb-3">
                            <label for="Tipus">Autó típusa:</label>
-                           <input type="text" value="{{ old('Tipus') }}" name="Tipus" class="form-control">    
+                           <input type="text" value="{{ old('Tipus') }}" name="Tipus" class="form-control"> 
+                           
+                           @error('Tipus')
+                                <div class="alert alert-danger">
+                                    {{$message}}
+                                </div>
+                            @enderror
 
                        </div>
 
                        <div class="mt-3 mb-3">
                            <label for="Szin">Autó színe:</label>
                            <input type="text" value="{{ old('Szin') }}" name="Szin" class="form-control">  
+
+                           @error('Szin')
+                           <div class="alert alert-danger">
+                               {{$message}}
+                           </div>
+                       @enderror
+
                        </div>
                        
                        <div class="mt-3 mb-3">

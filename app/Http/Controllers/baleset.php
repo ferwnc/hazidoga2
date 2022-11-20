@@ -15,10 +15,17 @@ class baleset extends Controller
 
             $validate = $req->validate(
                 [
-    
+                    "baleset_id" => "required|numeric|min:1",
+                    "baleset_idopontja" => "required",
+                    "serules" => "required|max:400"
                 ],
                 [
-    
+                    "baleset_id.required" => "A mező kitöltése kötelező!",
+                    "baleset_id.numeric" => "Csak számot adhat meg!",
+                    "baleset_id.min" => "Minimum 1-et adjon meg!",
+                    "baleset_idopontja.required" => "A mező kitöltése kötelező!",
+                    "serules.required" => "A mező kitöltése kötelező!",
+                    "serules.max" => "Maximum 400 karakter lehet!"
                 ]
             );
             

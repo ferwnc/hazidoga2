@@ -17,10 +17,23 @@ class autoeletut extends Controller
 
         $validate = $req->validate(
             [
-
+                "adat_id" => "required|numeric|min:1",
+                "Rendszam" => "required|max:8",
+                "Tipus" => "required|max:50",
+                "Szin" => "required"
             ],
             [
+                "adat_id.required" => "A mező kitöltése kötelező!",
+                "Rendszam.required" => "A mező kitöltése kötelező!",
+                "Tipus.required" => "A mező kitöltése kötelező!",
+                "Szin.required" => "A mező kitöltése kötelező!",
 
+                "adat_id.numeric" => "Ide csak számot adhat meg!",
+
+                "adat_id.min" => "Minimum 1-et kell megadni",
+
+                "Rendszam.max" => "Maximum 8 karakter lehet!",
+                "Tipus.max" => "Maximum 50 karakter lehet!"
             ]
         );
         
