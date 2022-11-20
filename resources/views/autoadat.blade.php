@@ -12,21 +12,26 @@
 
                    <form method="POST">
                        @csrf
+                      
                        <div class="mt-3 mb-3">
-                           <label for="rendszam">Autó rendszáma:</label>
-                           <input type="text" value="{{ old('rendszam') }}" name="rendszam" class="form-control">    
+                        <label for="adat_id">adat_id:</label>
+                        <input type="number," value="{{ old('adat_id') }}" name="adat_id" class="form-control">  
+                    </div>
+                    
+                       <div class="mt-3 mb-3">
+                           <label for="Rendszam">Autó rendszáma:</label>
+                           <input type="text" value="{{ old('Rendszam') }}" name="Rendszam" class="form-control">    
                        </div>
 
                        <div class="mt-3 mb-3">
-                           <label for="tipus">Autó típusa:</label>
-                           <input type="text" value="{{ old('tipus') }}" name="tipus" class="form-control">    
+                           <label for="Tipus">Autó típusa:</label>
+                           <input type="text" value="{{ old('Tipus') }}" name="Tipus" class="form-control">    
 
                        </div>
 
                        <div class="mt-3 mb-3">
-                           <label for="szin">Autó színe:</label>
-                           <input type="text" value="{{ old('szin') }}" name="szin" class="form-control">  
-
+                           <label for="Szin">Autó színe:</label>
+                           <input type="text" value="{{ old('Szin') }}" name="Szin" class="form-control">  
                        </div>
                        
                        <div class="mt-3 mb-3">

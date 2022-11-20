@@ -17,7 +17,16 @@ use App\Http\Controllers\baleset;
 |
 */
 Route::get('/', [fooldal::class,"getContent"]);
+
 Route::get('/fooldal', [fooldal::class,"getContent"]);
+
+
 Route::get('/autoadat', [autoeletut::class,"getContent"]);
+Route::post('/autoadat', [autoeletut::class,"adatok"]);
+
 Route::get('/tulaj', [tulaj::class,"getContent"]);
+
+
 Route::get('/baleset', [baleset::class,"getContent"]);
+Route::post('/baleset', [autoeletut::class,"serules"]);
+
